@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+b {
+  font-weight: bold;
+}
+
+/*Container*/
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+}
+
+.header-text {
+  max-width: 290px;
+
+  line-height: 1.2;
+  font-size: 1.4rem;
+  color: #0089cd;
+}
+
+.header-worktime {
+  position: relative;
+
+  padding: 0 0 0 40px;
+
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333333;
+}
+
+.header-worktime b {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.header-worktime img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header-call-measurer-btn {
+  position: relative;
+
+  padding: 1rem 1rem 1rem 5rem;
+
+  border: 2px solid #55a831;
+  border-radius: 1rem;
+
+  background-color: #fff;
+  color:  #55a831;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.header-call-measurer-btn img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header-contact-number {
+  position: relative;
+
+  padding: 0 0 0 30px;
+
+  line-height: 1.7;
+}
+
+.header-contact-number img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header-number {
+  color: #000;
+  font-size: 2.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-order-call {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0089cd;
+  text-decoration: underline;
+}
