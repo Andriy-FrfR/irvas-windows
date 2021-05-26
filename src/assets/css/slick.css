@@ -1,0 +1,23 @@
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+  width: 20px;
+  height: 20px;
+  z-index: 3000;
+
+  color: transparent;
+}
+
+.slick-prev {
+  left: 0;
+  background: url(../img/glazing/left_arrow.png) center no-repeat;
+  background-size: 70%;
+}
+
+.slick-next {
+  right: 0;
+  background: url(../img/glazing/right_arrow.png) center no-repeat;
+  background-size: 70%;
+}
