@@ -536,3 +536,86 @@ b {
   font-style: normal;
   color: #000000;
 }
+
+/*Our works*/
+
+.our-works {
+  margin: 170px 0 0 0;
+}
+
+.our-works .section-header {
+  margin-bottom: 40px;
+}
+
+.our-works-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.our-works-item {
+  width: 23.5%;
+
+  margin: 30px 0 0 0;
+
+  cursor: pointer;
+}
+
+.our-works-img {
+  width: 100%;
+}
+
+/*Guaranties*/
+
+.guarantees {
+  margin: 60px 0 0 0;
+  padding: 6rem 0 1rem;
+
+  background-color: #0089cd;
+}
+
+.guarantees .section-header {
+  margin-top: 0;
+}
+
+.guarantees .section-title {
+  color: #ffffff;
+}
+
+.guarantees .section-title-sup {
+  margin-top: 2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 17rem;
+  height: 0.2rem;
+  background: url(../img/guarantees/header_sub.png) 0 0 no-repeat;
+}
+
+.guarantees-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.guarantees-col {
+  width: 31%;
+
+  padding: 0 0 70px 0;
+}
+
+.guarantees-item {
+  text-align: center;
+}
+
+.guarantees-item:hover {
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.guarantees-item-text {
+  margin: 30px 0 0 0;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
