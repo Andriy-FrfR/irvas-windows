@@ -619,3 +619,38 @@ b {
   line-height: 1.4;
   color: #ffffff;
 }
+
+/*Payment*/
+
+.payment-title {
+  margin: 85px 0;
+
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-methods-item {
+  display: flex;
+  align-items: center;
+}
+
+.payment-methods-item-text {
+  display: inline-block;
+
+  margin: 0 0 0 20px;
+
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
