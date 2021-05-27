@@ -537,7 +537,7 @@ b {
   color: #000000;
 }
 
-/*Our works*/
+/*Our works section*/
 
 .our-works {
   margin: 170px 0 0 0;
@@ -565,7 +565,7 @@ b {
   width: 100%;
 }
 
-/*Guaranties*/
+/*Guaranties section*/
 
 .guarantees {
   margin: 60px 0 0 0;
@@ -620,7 +620,7 @@ b {
   color: #ffffff;
 }
 
-/*Payment*/
+/*Payment section*/
 
 .payment-title {
   margin: 85px 0;
@@ -653,4 +653,74 @@ b {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
+}
+
+/*Sale section*/
+
+.sale {
+  margin: 70px 0 0 0;
+  padding: 90px 0 70px 0;
+
+  background: url(../img/sale/bg.jpg);
+  background-size: cover;
+}
+
+.sale-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-box-title {
+  font-size: 4.8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #0089cd;
+}
+
+.sale-box-subtitle {
+  margin: 8rem 0 8rem 0;
+  font-size: 2.4rem;
+  line-height: 1.6;
+}
+
+/*Timer*/
+
+.timer {
+  width: 360px;
+  height: 150px;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  padding: 10px;
+
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+
+  margin: 5px 0 0 0;
+}
+
+.timer-item {
+  margin-right: 6px;
+}
+
+.timer-item-count {
+  display: inline-block;
+
+  border-radius: 7px;
+
+  padding: 4px;
+
+  background-color: #575757;
+  color: white;
+  font-size: 40px;
 }
