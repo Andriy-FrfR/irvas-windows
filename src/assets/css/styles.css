@@ -35,7 +35,7 @@ b {
 /*Section*/
 
 .section-header {
-  margin: 120px 0 70px 0;
+  margin: 100px 0 70px 0;
 }
 
 .section-title {
@@ -46,6 +46,7 @@ b {
   font-weight: 700;
   font-style: normal;
   color: #333333;
+  text-transform: uppercase;
 }
 
 .section-title-sup {
@@ -723,4 +724,102 @@ b {
   background-color: #575757;
   color: white;
   font-size: 40px;
+}
+
+/*Find section*/
+
+.find-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-map {
+  width: 555px;
+  height: 450px;
+}
+
+.find-contacts {
+  width: 455px;
+}
+
+.find-contacts-item-title {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0089cd;
+}
+
+.find-contacts-item-content {
+  margin-bottom: 2.8rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.find-contacts-item-content a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*Questions section*/
+
+.questions {
+  display: flex;
+  justify-content: center;
+
+  padding: 6rem 0;
+
+  background-color: #0089cd;
+}
+
+.questions p {
+  display: inline-block;
+  margin-right: 4rem;
+
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.questions a {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/*Footer*/
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer-inner {
+  position: relative;
+
+  text-align: center;
+}
+
+.footer-contacts {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+
+  text-align: right;
+}
+
+.footer-contacts-number {
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+}
+
+.footer-contacts-email {
+  font-size: 1.4rem;
+  color: #0089cd;
+  text-decoration: underline;
 }
