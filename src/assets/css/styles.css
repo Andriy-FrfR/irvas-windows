@@ -366,14 +366,20 @@ b {
 
 .glazing-tabs-row.visible {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .glazing-tabs-col {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   width: 50%;
 }
 
 .glazing-cold {
+  width: 100%;
+
   padding: 2.5rem 60px;
 
   background: linear-gradient(180deg, #c7dce9 0%, #c7dce9 0%, rgba(255, 255, 255, 0) 100%);
@@ -384,6 +390,8 @@ b {
 }
 
 .glazing-warm {
+  width: 100%;
+
   padding: 2.5rem 60px;
 
   background: linear-gradient(180deg, #f7eac9 0%, #f7eac9 0%, rgba(255, 255, 255, 0) 100%);
@@ -436,9 +444,11 @@ b {
 
 .glazing-tabs-calc-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 
-  padding: 2.5rem 60px;
+  padding: 0 60px;
 }
 
 .glazing-tabs-calc-text {
@@ -861,6 +871,17 @@ b {
   .call-measurer-header b {
     font-size: 4.5rem;
   }
+
+  /*Glazing-section*/
+
+  .glazing-cold,
+  .glazing-warm {
+    padding: 2.5rem 20px;
+  }
+
+  .glazing-tabs-calc-wrapper {
+    padding: 0 20px 0 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -898,9 +919,45 @@ b {
 
     margin-top: 40px;
   }
+
+  /*Glazing section*/
+  .glazing-tabs-col {
+    width: 100%;
+    max-width: 755px;
+  }
+
+  .glazing-tabs-col:nth-child(2) {
+    margin: 40px 0 0 0;
+  }
+
+  .glazing-cold,
+  .glazing-warm {
+    padding: 2.5rem 60px;
+  }
+
+  .glazing-tabs-calc-wrapper {
+    justify-content: center;
+
+    padding: 0 60px;
+  }
+
+  .glazing-tabs-calc-wrapper div {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .glazing-tabs-calc-btn {
+    margin-top: 10px;
+  }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+  /*Container*/
+  .container {
+    max-width: 750px;
+  }
+
   /*Header*/
   .header-worktime {
     margin-top: 10px;
@@ -912,6 +969,11 @@ b {
 
   .header-order-call {
     margin-top: 10px;
+  }
+
+  /*Glazing section*/
+  .glazing .container {
+    padding: 0;
   }
 }
 
@@ -936,6 +998,10 @@ b {
 
 @media (max-width: 480px) {
   /*Section*/
+  .section-header {
+    margin: 70px 0 50px 0;
+  }
+
   .section-title {
     font-size: 2.5rem;
   }
@@ -969,6 +1035,12 @@ b {
 
   .call-measurer-icons {
     margin-top: 50px;
+  }
+
+  /*Glazing section*/
+  .glazing-cold,
+  .glazing-warm {
+    padding: 2.5rem 20px;
   }
 }
 
