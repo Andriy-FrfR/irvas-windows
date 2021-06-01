@@ -705,6 +705,7 @@ b {
 
 .sale-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -726,6 +727,7 @@ b {
 /*Timer*/
 
 .timer {
+  display: inline-block;
   width: 360px;
   height: 150px;
 
@@ -998,6 +1000,25 @@ b {
 
     margin: 10px 0 0 0;
   }
+
+  /*Sale section*/
+  .sale-wrapper {
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .sale-box {
+    width: 100%;
+  }
+
+  .sale-box-subtitle {
+    margin: 50px 0;
+  }
+
+  .sale .call-measurer-form {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1147,6 +1168,20 @@ b {
   /*Payment section*/
   .payment-title {
     margin: 35px 0 20px;
+  }
+
+  /*Sale section*/
+  .sale {
+    margin-top: 50px;
+    padding: 60px 0 50px;
+  }
+
+  .sale-box-subtitle {
+    margin: 30px 0;
+  }
+
+  .timer {
+    width: 290px;
   }
 }
 
