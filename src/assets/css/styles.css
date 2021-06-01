@@ -807,6 +807,7 @@ b {
 
 .questions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   padding: 6rem 0;
@@ -820,6 +821,7 @@ b {
 
   font-size: 3rem;
   color: #ffffff;
+  text-align: center;
 }
 
 .questions a {
@@ -827,6 +829,7 @@ b {
   font-weight: 600;
   color: #ffffff;
   text-decoration: underline;
+  text-align: center;
 }
 
 /*Footer*/
@@ -1038,6 +1041,17 @@ b {
   .sale .call-measurer-form {
     margin-top: 20px;
   }
+
+  /*Questions section*/
+  .questions p {
+    width: 100%;
+
+    margin-right: 0;
+  }
+
+  .questions a {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1085,6 +1099,15 @@ b {
     width: 100%;
 
     margin-top: 30px;
+  }
+
+  /*Footer*/
+  .footer-contacts {
+    position: static;
+
+    margin: 15px 0;
+
+    text-align: center;
   }
 }
 
