@@ -769,6 +769,7 @@ b {
 
 .find-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -906,6 +907,24 @@ b {
 
   .materials {
     max-width: 600px;
+  }
+
+  /*Find section*/
+  .find-wrapper {
+    justify-content: center;
+  }
+
+  .find-map {
+    width: 100%;
+    height: 500px;
+    max-width: 700px;
+  }
+
+  .find-contacts {
+    width: 100%;
+    max-width: 700px;
+
+    margin-top: 30px;
   }
 }
 
@@ -1182,6 +1201,15 @@ b {
 
   .timer {
     width: 290px;
+  }
+
+  /*Find section*/
+  .find-map {
+    height: 350px;
+  }
+
+  .find-contacts-item-title {
+    margin-bottom: 1.2rem;
   }
 }
 
