@@ -249,7 +249,7 @@ b {
 
   border-radius: 1rem;
 
-  padding: 40px 40px 20px 40px;
+  padding: 40px 40px 20px;
 
   background-color: #fff;
   text-align: center;
@@ -485,6 +485,12 @@ b {
 }
 
 /*Order-finishing section*/
+.order-finishing {
+  margin: 50px 0 0 0;
+  padding: 1px 0 8rem;
+
+  background-color: #f7f7f7;
+}
 
 .order-finishing-slider {
   border-top: 1rem solid #0089cd;
@@ -527,6 +533,8 @@ b {
 
 .order-finishing-tabs-row.visible {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .materials {
@@ -882,6 +890,21 @@ b {
   .glazing-tabs-calc-wrapper {
     padding: 0 20px 0 0;
   }
+
+  /*Order-finishing section*/
+  .order-finishing .call-measurer-form {
+    max-width: 500px;
+
+    margin-top: 30px;
+  }
+
+  .order-finishing-tabs {
+    margin-top: 60px;
+  }
+
+  .materials {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -950,6 +973,15 @@ b {
   .glazing-tabs-calc-btn {
     margin-top: 10px;
   }
+
+  /*Order-finishing section*/
+  .materials {
+    max-width: 800px;
+  }
+
+  .materials-item {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -972,7 +1004,7 @@ b {
   }
 
   /*Glazing section*/
-  .glazing .container {
+  .glazing .container:nth-child(3) {
     padding: 0;
   }
 }
@@ -993,6 +1025,11 @@ b {
     width: 50%;
 
     text-align: center;
+  }
+
+  /*Order-finishing section*/
+  .order-finishing-tabs {
+    margin-top: 0;
   }
 }
 
@@ -1023,6 +1060,10 @@ b {
     font-size: 3.5rem;
   }
 
+  .call-measurer-form {
+    padding: 40px 20px 20px;
+  }
+
   .call-measurer-form-header {
     margin-bottom: 20px;
 
@@ -1041,6 +1082,15 @@ b {
   .glazing-cold,
   .glazing-warm {
     padding: 2.5rem 20px;
+  }
+
+  /*Order-finishing section*/
+  .order-finishing {
+    padding-bottom: 6rem;
+  }
+
+  .materials-item {
+    width: 50%;
   }
 }
 
