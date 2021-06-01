@@ -577,10 +577,6 @@ b {
 
 /*Our works section*/
 
-.our-works {
-  margin: 170px 0 0 0;
-}
-
 .our-works .section-header {
   margin-bottom: 40px;
 }
@@ -982,6 +978,11 @@ b {
   .materials-item {
     margin-top: 30px;
   }
+
+  /*Our works*/
+  .our-works-item {
+    width: 32%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1006,6 +1007,13 @@ b {
   /*Glazing section*/
   .glazing .container:nth-child(3) {
     padding: 0;
+  }
+
+  /*Our works*/
+  .our-works-item {
+    width: 48.5%;
+
+    margin-top: 15px;
   }
 }
 
@@ -1091,6 +1099,11 @@ b {
 
   .materials-item {
     width: 50%;
+  }
+
+  /*Our works*/
+  .our-works-item {
+    width: 100%;
   }
 }
 
