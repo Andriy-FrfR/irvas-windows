@@ -627,8 +627,8 @@ b {
 
 .guarantees-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .guarantees-col {
@@ -1015,6 +1015,11 @@ b {
 
     margin-top: 15px;
   }
+
+  /*Guarantees*/
+  .guarantees-col {
+    width: 46%;
+  }
 }
 
 @media (max-width: 568px) {
@@ -1104,6 +1109,13 @@ b {
   /*Our works*/
   .our-works-item {
     width: 100%;
+  }
+
+  /*Guarantees*/
+  .guarantees-col {
+    width: 100%;
+
+    padding-bottom: 45px;
   }
 }
 
