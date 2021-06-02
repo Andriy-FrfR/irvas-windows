@@ -332,13 +332,15 @@ b {
   text-align: center;
 }
 
-.glazing-item a {
-  display: inline-block;
-  
+.glazing-item {
   cursor: pointer;
 }
 
-.glazing-item:hover a, .glazing-item:focus a {
+.glazing-item a {
+  display: inline-block;
+}
+
+.glazing-item:hover a, .glazing-item.active a {
   color: #23527c;
 }
 
@@ -501,6 +503,10 @@ b {
   text-align: center;
 }
 
+.order-finishing-slider-item {
+  cursor: pointer;
+}
+
 .order-finishing-slider-item a {
   display: inline-block;
 
@@ -511,10 +517,9 @@ b {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.order-finishing-slider-item a:focus {
+.order-finishing-slider-item.active a {
   border: none;
 
   text-decoration: none;
@@ -887,7 +892,6 @@ b {
   }
 
   /*Glazing-section*/
-
   .glazing-cold,
   .glazing-warm {
     padding: 2.5rem 20px;
