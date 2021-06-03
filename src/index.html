@@ -961,7 +961,7 @@
           и его профиль
         </h3>
         <select name="select-glazing-type" id="glazing-select">
-          <option value="overhang">Остекление с выносом</option>
+          <option value="overhang" selected>Остекление с выносом</option>
           <option value="tree">Деревянное остекление</option>
           <option value="aluminum">Алюминиевое остекление</option>
           <option value="plastic">Остекление с пластиковыми рамами</option>
@@ -970,8 +970,20 @@
         <div class="select-img">
           <img src="./assets/img/modal_calc/icon_cold.png" alt="Lorem ipsum">
         </div>
+        <div class="custom-checkbox-wrapper">
+          <div class="custom-checkbox">
+            <img src="./assets/img/modal_calc/check.png" alt="Lorem ipsum">
+          </div>
+          <div class="custom-checkbox-text">Холодное</div>
+        </div>
         <div class="select-img">
           <img src="./assets/img/modal_calc/icon_warm.png" alt="Lorem ipsum">
+        </div>
+        <div class="custom-checkbox-wrapper">
+          <div class="custom-checkbox">
+            <img src="./assets/img/modal_calc/check_warm.png" alt="Lorem ipsum">
+          </div>
+          <div class="custom-checkbox-text">Теплое</div>
         </div>
         <input class="calc-form-btn button" onclick="return false" type="submit" data-modal-btn-index="4" value="Далее">
       </form>
