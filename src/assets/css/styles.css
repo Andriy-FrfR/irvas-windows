@@ -976,6 +976,14 @@ b {
   margin: 10px auto 0;
 }
 
+.balcon-big-img img {
+  display: none;
+}
+
+.balcon-big-img img.visible {
+  display: block;
+}
+
 .calc-form-size {
   margin: 20px 0 0 0;
 }

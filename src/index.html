@@ -913,29 +913,32 @@
       <button class="hide-modal">
         <strong>×</strong>
       </button>
-      <form class="calc-form">
+      <form class="calc-form tabs-container">
         <h2 class="calc-form-title">Калькулятор</h2>
         <h3 class="calc-form-subtitle">
           Выберите форму балкона
           <br>
           и укажите размеры
         </h3>
-        <div class="balcon-items">
-          <div class="balcon-item active">
+        <div class="balcon-items tabs-buttons-wrapper">
+          <div class="balcon-item active" data-tab-index="0">
             <img src="./assets/img/modal_calc/balkon/ba_01.png" alt="Lorem ipsum">
           </div>
-          <div class="balcon-item">
+          <div class="balcon-item" data-tab-index="1">
             <img src="./assets/img/modal_calc/balkon/ba_02.png" alt="Lorem ipsum">
           </div>
-          <div class="balcon-item">
+          <div class="balcon-item" data-tab-index="2">
             <img src="./assets/img/modal_calc/balkon/ba_03.png" alt="Lorem ipsum">
           </div>
-          <div class="balcon-item">
+          <div class="balcon-item" data-tab-index="3">
             <img src="./assets/img/modal_calc/balkon/ba_04.png" alt="Lorem ipsum">
           </div>
         </div>
-        <div class="balcon-big-img">
-          <img src="./assets/img/modal_calc/balkon/type1.png" alt="Lorem ipsum">
+        <div class="balcon-big-img tabs-wrapper">
+          <img class="visible" src="./assets/img/modal_calc/balkon/type1.png" data-tab-index="0" alt="Lorem ipsum">
+          <img src="./assets/img/modal_calc/balkon/type2.png" data-tab-index="1" alt="Lorem ipsum">
+          <img src="./assets/img/modal_calc/balkon/type3.png" data-tab-index="2" alt="Lorem ipsum">
+          <img src="./assets/img/modal_calc/balkon/type4.png" data-tab-index="3" alt="Lorem ipsum">
         </div>
         <div class="calc-form-size">
           <input type="text" name="width" required class="form-control" placeholder="Ширина">
