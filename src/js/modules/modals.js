@@ -1,3 +1,5 @@
+import { validateModalsSteps } from './validate-modals-steps.js';
+
 const removeActiveModals = () => {
   const modalsWrapper = document.querySelector('.modals-wrapper');
   const modals = modalsWrapper.querySelectorAll('.modal');
@@ -51,6 +53,10 @@ export const modals = () => {
   modalButtons.forEach(modalButton => {
     modalButton.addEventListener('click', () => {
       const modal = modalsWrapper.querySelector(`[data-modal-index="${modalButton.dataset.modalBtnIndex}"]`);
+
+      if (!validateModalsSteps(modalButton.closest('.modal'))) {
+        return;
+      }
       
       removeActiveModals();
       showModal();

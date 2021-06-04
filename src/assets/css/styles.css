@@ -897,6 +897,8 @@ b {
   transform: translate(-50%, -50%);
   z-index: 10;
 
+  max-width: 100%;
+
   display: none;
 }
 
@@ -1002,6 +1004,10 @@ b {
   font-size: 14px;
 }
 
+.calc-form.invalid .form-control {
+  border: 1px solid red;
+}
+
 .calc-form label {
   font-family: 'Open Sans Regular';
   color: #333;
@@ -1067,6 +1073,10 @@ b {
 
   line-height: 22px;
   cursor: pointer;
+}
+
+.calc-form.invalid .custom-checkbox {
+  border: 1px solid red;
 }
 
 .custom-checkbox img {
