@@ -918,6 +918,7 @@ b {
 
 .modal .contact-form {
   max-width: 400px;
+  width: 400px;
 
   border-radius: 0;
 }
@@ -928,6 +929,10 @@ b {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.our-works-modal img {
+  max-width: 100%;
 }
 
 /*Calc-form-modal*/
@@ -976,8 +981,11 @@ b {
   margin-bottom: 3rem;
 }
 
+/*Balcon images*/
+
 .balcon-items {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -1302,6 +1310,13 @@ b {
   .questions a {
     width: 100%;
   }
+
+  /*Modals*/
+
+  /*Our-works-modals*/
+  .our-works-modal-img {
+    width: 520px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1382,6 +1397,13 @@ b {
   /*Order-finishing section*/
   .order-finishing-tabs {
     margin-top: 0;
+  }
+
+  /*Modals*/
+
+  /*Our-works-modals*/
+  .our-works-modal-img {
+    width: 460px;
   }
 }
 
@@ -1483,6 +1505,37 @@ b {
 
   .find-contacts-item-title {
     margin-bottom: 1.2rem;
+  }
+
+  /*Modals*/
+
+  /*Contact-form*/
+  .modal .contact-form {
+    width: 320px;
+  }
+
+  /*Calc-form*/
+
+  .calc-form {
+    width: 320px;
+
+    padding: 20px 10px 30px;
+  }
+
+  /*Balcon images*/
+  .balcon-item {
+    width: 60px;
+    height: 30px;
+  }
+
+  .balcon-item.active {
+    width: 100px;
+    height: 50px;
+  }
+
+  /*Our-works-modals*/
+  .our-works-modal-img {
+    width: 320px;
   }
 }
 
