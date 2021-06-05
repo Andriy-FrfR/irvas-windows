@@ -22,6 +22,17 @@ b {
   font-weight: bold;
 }
 
+/*Input*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 /*Button*/
 
 .button {
@@ -948,7 +959,6 @@ b {
 .contact-form-modal {
   left: 50%;
   top: 10%;
-
   transform: translate(-50%, 0);
 }
 
@@ -1520,6 +1530,10 @@ b {
     width: 320px;
 
     padding: 20px 10px 30px;
+  }
+
+  .multiplycation {
+    margin: 0 7px;
   }
 
   /*Balcon images*/
