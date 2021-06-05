@@ -868,9 +868,9 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-contacts">
-          <a class="footer-contacts-number" href="#">+7 (495) 646-61-71</a>
+          <a class="footer-contacts-number" href="tel:+74956466171">+7 (495) 646-61-71</a>
           <br>
-          <a class="footer-contacts-email" href="#">info@irvasokna.ru</a>
+          <a class="footer-contacts-email" href="mailto:info@irvasokna.ru">info@irvasokna.ru</a>
         </div>
         <img class="footer-logo" src="./assets/img/header/logo.png" alt="Lorem ipsum">
       </div>
@@ -913,7 +913,7 @@
       <button class="hide-modal">
         <strong>×</strong>
       </button>
-      <form class="calc-form tabs-container">
+      <form class="calc-form tabs-container" onsubmit="return false">
         <h2 class="calc-form-title">Калькулятор</h2>
         <h3 class="calc-form-subtitle">
           Выберите форму балкона
@@ -949,14 +949,14 @@
           <input id="heightInput" class="form-control" required type="number" placeholder="Висота">
           <label for="height">мм</label>
         </div>
-        <input class="calc-form-btn button" onclick="return false" type="submit" data-modal-btn-index="3" value="Далее">
+        <input class="calc-form-btn button" type="submit" data-modal-btn-index="3" value="Далее">
       </form>
     </div>
     <div class="modal calc-form-modal" data-modal-index="3">
       <button class="hide-modal">
         <strong>×</strong>
       </button>
-      <form class="calc-form">
+      <form class="calc-form" onclick="return false">
         <h2 class="calc-form-title">Калькулятор</h2>
         <h3 class="calc-form-subtitle">
           Выберите тип остекления
@@ -988,7 +988,7 @@
           </div>
           <div class="custom-checkbox-text">Теплое</div>
         </div>
-        <input class="calc-form-btn button" onclick="return false" type="submit" data-modal-btn-index="4" value="Далее">
+        <input class="calc-form-btn button" type="submit" data-modal-btn-index="4" value="Далее">
       </form>
     </div>
     <div class="modal contact-form-modal" data-modal-index="4">
@@ -1002,7 +1002,7 @@
           <b>Оставьте свои данные</b>
         </div>
         <input class="contact-form-input" type="text" required placeholder="Введите ваше имя">
-        <input class="contact-form-input" type="text" required type="number" placeholder="Введите ваш телефон">
+        <input class="contact-form-input" required type="number" placeholder="Введите ваш телефон">
         <input class="contact-form-submit button" type="submit" value="Рассчитать стоимость">
         <div class="contact-form-private">Перезвоним в течение 10 минут</div>
       </form>
