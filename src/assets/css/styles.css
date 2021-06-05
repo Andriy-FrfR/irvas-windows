@@ -892,9 +892,6 @@ b {
 
 .modal {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 10;
 
   max-width: 100%;
@@ -923,6 +920,31 @@ b {
   max-width: 400px;
 
   border-radius: 0;
+}
+
+/*Our-works-modals*/
+
+.our-works-modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Calc-form-modal*/
+
+.calc-form-modal {
+  left: 50%;
+  top: 3%;
+  transform: translate(-50%, 0);
+}
+
+/*Contact-form-modal*/
+
+.contact-form-modal {
+  left: 50%;
+  top: 10%;
+
+  transform: translate(-50%, 0);
 }
 
 /*Calculator-form*/
