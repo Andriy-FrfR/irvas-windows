@@ -76,7 +76,7 @@
           </div>
         </div>
         <div class="call-measurer-box">
-          <form class="contact-form">
+          <form class="contact-form call-measurer-form">
             <div class="contact-form-header">
               Запишитесь сегодня на
               <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -497,7 +497,7 @@
                 <div class="materials-item-withmaterial">с материалом</div>
               </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form call-measurer-form">
               <div class="contact-form-header">
                 Запишитесь сегодня на
                 <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -544,7 +544,7 @@
                 <div class="materials-item-withmaterial">с материалом</div>
               </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form call-measurer-form">
               <div class="contact-form-header">
                 Запишитесь сегодня на
                 <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -585,7 +585,7 @@
                 <div class="materials-item-withmaterial">с материалом</div>
               </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form call-measurer-form">
               <div class="contact-form-header">
                 Запишитесь сегодня на
                 <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -632,7 +632,7 @@
                 <div class="materials-item-withmaterial">с материалом</div>
               </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form call-measurer-form">
               <div class="contact-form-header">
                 Запишитесь сегодня на
                 <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -791,7 +791,7 @@
               </div>
             </div>
           </div>
-          <form class="contact-form">
+          <form class="contact-form call-measurer-form">
             <div class="contact-form-header">
               Запишитесь сегодня на
               <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -882,7 +882,7 @@
       <button class="hide-modal">
         <strong>×</strong>
       </button>
-      <form class="contact-form">
+      <form class="contact-form call-measurer-form">
         <div class="contact-form-header">
           Запишитесь сегодня на
           <b>БЕСПЛАТНЫЙ ЗАМЕР</b>
@@ -897,7 +897,7 @@
       <button class="hide-modal">
         <strong>×</strong>
       </button>
-      <form class="contact-form">
+      <form class="contact-form order-call-form">
         <div class="contact-form-header">
           Введите ваши данные
           <br>
@@ -921,16 +921,16 @@
           и укажите размеры
         </h3>
         <div class="balcon-items tabs-buttons-wrapper">
-          <div class="balcon-item active" data-tab-index="0">
+          <div class="balcon-item active" data-tab-index="0" data-balcon-form="type-1">
             <img src="./assets/img/modal_calc/balkon/ba_01.png" alt="Lorem ipsum">
           </div>
-          <div class="balcon-item" data-tab-index="1">
+          <div class="balcon-item" data-tab-index="1" data-balcon-form="type-2">
             <img src="./assets/img/modal_calc/balkon/ba_02.png" alt="Lorem ipsum">
           </div>
-          <div class="balcon-item" data-tab-index="2">
+          <div class="balcon-item" data-tab-index="2" data-balcon-form="type-3">
             <img src="./assets/img/modal_calc/balkon/ba_03.png" alt="Lorem ipsum">
           </div>
-          <div class="balcon-item" data-tab-index="3">
+          <div class="balcon-item" data-tab-index="3" data-balcon-form="type-4">
             <img src="./assets/img/modal_calc/balkon/ba_04.png" alt="Lorem ipsum">
           </div>
         </div>
@@ -963,7 +963,7 @@
           <br>
           и его профиль
         </h3>
-        <select name="select-glazing-type" id="glazing-select">
+        <select name="select-glazing-type" id="glazingSelect">
           <option value="overhang" selected>Остекление с выносом</option>
           <option value="tree">Деревянное остекление</option>
           <option value="aluminum">Алюминиевое остекление</option>
@@ -974,7 +974,7 @@
           <img src="./assets/img/modal_calc/icon_cold.png" alt="Lorem ipsum">
         </div>
         <div class="custom-checkbox-wrapper">
-          <div class="custom-checkbox">
+          <div class="custom-checkbox" data-profile="cold">
             <img src="./assets/img/modal_calc/check.png" alt="Lorem ipsum">
           </div>
           <div class="custom-checkbox-text">Холодное</div>
@@ -983,7 +983,7 @@
           <img src="./assets/img/modal_calc/icon_warm.png" alt="Lorem ipsum">
         </div>
         <div class="custom-checkbox-wrapper">
-          <div class="custom-checkbox">
+          <div class="custom-checkbox" data-profile="warm">
             <img src="./assets/img/modal_calc/check_warm.png" alt="Lorem ipsum">
           </div>
           <div class="custom-checkbox-text">Теплое</div>
@@ -995,7 +995,7 @@
       <button class="hide-modal">
         <strong>×</strong>
       </button>
-      <form class="contact-form">
+      <form class="contact-form calculate-form">
         <div class="contact-form-header">
           Спасибо за обращение!
           <br>
@@ -1048,9 +1048,15 @@
       </div>
     </div>
   </div>
+  <div class="request-info">
+    <h3 class="request-success">Запрос отправлен</h3>
+    <h3 class="request-error">Ошибка отправления</h3>
+  </div>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
   <script src="./js/main.js" type="module"></script>
 </body>
 </html>

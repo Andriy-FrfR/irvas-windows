@@ -1136,6 +1136,46 @@ input[type='number'] {
   font-weight: 500;
 }
 
+/*Request-info*/
+
+.request-info {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+
+  display: none;
+  width: 300px;
+  height: 50px;
+
+  border-radius: 5px;
+
+  background-color: rgb(76, 219, 33);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.request-info.visible {
+  display: block;
+}
+
+.request-info.error {
+  background-color: rgb(218, 61, 33);
+}
+
+.request-info.error .request-success {
+  display: none;
+}
+
+.request-error {
+  display: none;
+}
+
+.request-info.error .request-error {
+  display: block;
+}
+
 /*Media*/
 
 @media (max-width: 1200px) {
@@ -1550,6 +1590,14 @@ input[type='number'] {
   /*Our-works-modals*/
   .our-works-modal-img {
     width: 320px;
+  }
+
+  /*Request-info*/
+
+  .request-info {
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
   }
 }
 
