@@ -9,20 +9,6 @@ const removeActiveModals = () => {
   });
 };
 
-const showModal = () => {
-  document.querySelector('.modals-wrapper').classList.add('visible');
-
-  document.body.style.overflow = 'hidden';
-  document.body.style.marginRight = calcScroll() + 'px';
-};
-
-const hideModal = () => {
-  document.querySelector('.modals-wrapper').classList.remove('visible');
-
-  document.body.style.overflow = 'auto';
-  document.body.style.marginRight = 0;
-};
-
 const calcScroll = () => {
   let div = document.createElement('div');
 
@@ -36,6 +22,20 @@ const calcScroll = () => {
   div.remove();
 
   return scrollWidth;
+};
+
+const showModal = () => {
+  document.querySelector('.modals-wrapper').classList.add('visible');
+
+  document.body.style.overflow = 'hidden';
+  document.body.style.marginRight = calcScroll() + 'px';
+};
+
+export const hideModal = () => {
+  document.querySelector('.modals-wrapper').classList.remove('visible');
+
+  document.body.style.overflow = 'auto';
+  document.body.style.marginRight = 0;
 };
 
 export const modals = () => {

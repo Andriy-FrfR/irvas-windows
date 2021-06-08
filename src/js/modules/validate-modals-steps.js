@@ -4,7 +4,7 @@ export const validateModalsSteps = (modal) => {
   if (modal.querySelector('.calc-form .balcon-items')) { // Validates calc-form with balcon-items
     const calcForm = modal.querySelector('.calc-form');
 
-    if ((+widthInput.value >= 1 && +widthInput.value <= 999999) && (+heightInput.value >= 1 && +heightInput.value <= 999999)) {
+    if ((+widthInput.value >= 1 && +widthInput.value <= 9999999) && (+heightInput.value >= 1 && +heightInput.value <= 9999999)) {
       calcForm.classList.remove('invalid');
 
       return true;

@@ -1,3 +1,5 @@
+import { hideModal } from './modals.js';
+
 const showRequestStatus = (status) => {
   const requestInfo = document.querySelector('.request-info');
 
@@ -29,8 +31,10 @@ export const firebaseSendData = (db) => {
         name: formInputs[0].value,
         phone: formInputs[1].value
       }).then(() => {
+        hideModal();
         showRequestStatus('success');
       }).catch(() => {
+        hideModal();
         showRequestStatus('error');
       });
     });
@@ -46,8 +50,10 @@ export const firebaseSendData = (db) => {
         name: formInputs[0].value,
         phone: formInputs[1].value
       }).then(() => {
+        hideModal();
         showRequestStatus('success');
       }).catch(() => {
+        hideModal();
         showRequestStatus('error');
       });
     });
@@ -72,8 +78,10 @@ export const firebaseSendData = (db) => {
         glazingType: glazingSelect.value,
         profile: customCheckboxActive.dataset.profile,
       }).then(() => {
+        hideModal();
         showRequestStatus('success');
       }).catch(() => {
+        hideModal();
         showRequestStatus('error');
       });
     });
