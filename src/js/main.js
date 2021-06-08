@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   customCheckbox();
 
-  timer(1623281672000);
+  timer(db);
 
   firebaseSendData(db);
 });

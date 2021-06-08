@@ -32,18 +32,32 @@ const setSeconds = (time) => {
   document.querySelector('.timer-seconds .timer-item-count').textContent = secondsCount > 9 ? secondsCount : '0' + secondsCount;
 };
 
-export const timer = (time) => {
-  time = time - Date.now();
-  
-  setInterval(() => {
-    time = time - 1000;
+export const timer = (db) => {
+  let saleEndDate;
 
-    setDays(time);
+  db.collection('sale-date-end').doc('sale-date-doc').get()
+    .then(doc => {
+      if (doc.exists) {
+        saleEndDate = doc.data().date.seconds * 1000;
 
-    setHours(remainderFromDays);
+        let time = saleEndDate - Date.now();
 
-    setMinutes(remainderFromHours);
+        let interval = setInterval(() => {
+          if (time <= 0) {
+            clearInterval(interval);
+            return;
+          }
 
-    setSeconds(remainderFromMinutes);
-  }, 1000);
+          setDays(time);
+
+          setHours(remainderFromDays);
+
+          setMinutes(remainderFromHours);
+
+          setSeconds(remainderFromMinutes);
+
+          time = time - 1000;
+      }, 1000);
+      }
+    });
 };
